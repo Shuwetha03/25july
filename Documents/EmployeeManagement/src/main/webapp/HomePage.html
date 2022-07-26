@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+   <style>
+   h1{
+   text-align :center;
+   }
+   table{
+    width: 100%;
+    border-collapse:collapse;
+    border: 256px solid red;
+    }
+    table td{line-height:55px;padding-left:15px;}
+    table th{background-color:rgb(186, 189, 182); color:#363636;}
+   </style>
+</head>
+<body>
+	<table class="table">
+
+        <thead>
+            <tr>
+                <th colspan="2" style="text-align: center; font-size: 40px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+        	   <h1>Welcome!! HAVE A NICE DAY!!</h1>
+            <tr>
+         
+                <th scope="column" colspan="1" class="working-days-form">
+
+                    <h2 class="form-heading">Working Days</h2>
+
+                    <form class="form" name="home" action="UpdateDatabase" method="post">
+                        <br>
+                        <label for="day">Working Days</label>
+                        <input type="day" id="day" name="day" ><br><br>
+
+                        <label for="month">Month</label>
+                       <select name="month" id="month">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                       </select><br><br>
+
+                       <label for="year">Year</label>
+                       <input type="year" id="year" name="year" ><br><br>
+
+
+                        <button type = "submit">Update DataBase</button><br><br>
+                       
+                    </form>
+                </th>
+                <th scope="column" colspan="1" class="payslip-form">
+
+                    <h2 class="form-heading">Generate Payslip</h2>
+
+                    <form class="form" name="login" action="PayslipGenerator" method="post">
+                        <br>
+                        <label for="month">Month</label><br>
+                       <select name="month" id="month">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                       </select><br><br>
+
+                       <label for="year">Year</label><br>
+                       <input type="year" id="year" name="year" ><br><br> 
+                       </select><br>
+
+                        <button type = "submit">Generate Payslip</button><br><br>
+                       
+                    </form>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
